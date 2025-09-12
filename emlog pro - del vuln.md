@@ -1,6 +1,8 @@
 Emlog Pro 2.5.20
 Arbitrary file deletion vulnerability in the backend interface.
 
+The Emlog Pro version 2.5.20 has an arbitrary file deletion vulnerability. This vulnerability stems from the admin/template.php component and the admin/plugin.php component. They fail to perform path verification and dangerous code filtering for deletion parameters, allowing attackers to exploit this feature for directory traversal. Complete the deletion of the specified files and folders! It undermines the integrity and stability of the system and affects its normal operation.
+
 1. The functionality is primarily located in the backend template and plugin deletion process, as shown in the figure:
 Template:
 <img width="415" height="270" alt="image" src="https://github.com/user-attachments/assets/6a11c857-6739-4541-801d-eea24d423b3f" />
